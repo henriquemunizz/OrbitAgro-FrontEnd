@@ -245,6 +245,22 @@ footer {
         width: 12rem;
     }
 }
+
+.faq-question {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .faq-question::after {
     content: "+";
     color: var(--primary-color);
