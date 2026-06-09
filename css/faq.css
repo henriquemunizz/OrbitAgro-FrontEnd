@@ -110,12 +110,6 @@ body {
     margin-bottom: 18px;
     border-radius: 14px;
     border: 1px solid var(--border-color);
-    transition: 0.3s;
-}
-
-.faq-card:hover {
-    border-color: var(--primary-light);
-    box-shadow: var(--shadow-lg);
 }
 
 .faq-question {
@@ -148,7 +142,10 @@ body {
     color: var(--white-color);
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
+
+
 :root {
     --primary-color: #18aaa8;
     --primary-dark: #0b8f91;
@@ -193,6 +190,10 @@ body {
     text-decoration: none;
 }
 
+.logo:hover {
+    color: var(--primary-color);
+}
+
 .menu-btn {
     display: none;
     background-color: var(--primary-color);
@@ -214,6 +215,7 @@ body {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: 600;
+    transition: 0.3s;
 }
 
 .nav-link:hover {
@@ -261,12 +263,6 @@ body {
     margin-bottom: 18px;
     border-radius: 14px;
     border: 1px solid var(--border-color);
-    transition: 0.3s;
-}
-
-.faq-card:hover {
-    border-color: var(--primary-light);
-    box-shadow: var(--shadow-lg);
 }
 
 .faq-question {
@@ -299,6 +295,25 @@ body {
     color: var(--white-color);
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        width: 90%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -325,14 +340,19 @@ body {
 
     .main-content {
         width: 92%;
+        margin: 25px auto;
     }
 
     .title-section {
-        padding: 50px 20px;
+        padding: 45px 20px;
     }
 
     .title-card h1 {
         font-size: 30px;
+    }
+
+    .title-card p {
+        font-size: 16px;
     }
 
     .faq-section {
@@ -341,5 +361,10 @@ body {
 
     .faq-card {
         padding: 18px;
+    }
+
+    .faq-question {
+        padding: 13px;
+        font-size: 15px;
     }
 }
