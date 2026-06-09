@@ -204,6 +204,7 @@ footer {
 .recommendation-card ul {
     margin-left: 1.5rem;
 }
+
 @media (max-width: 1100px) {
     nav {
         height: auto;
@@ -283,6 +284,7 @@ footer {
         display: block;
     }
 
+    
     .nav-links {
         display: none;
         width: 100%;

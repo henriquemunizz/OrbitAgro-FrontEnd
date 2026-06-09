@@ -286,6 +286,7 @@ footer {
     background-color: var(--primary-dark);
 }
 
+
 @media (max-width: 700px) {
     nav {
         flex-direction: row;
@@ -295,6 +296,7 @@ footer {
         min-height: auto;
         padding: 1rem 5%;
     }
+
 
     .menu-btn {
         display: block;
