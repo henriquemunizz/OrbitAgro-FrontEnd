@@ -189,7 +189,9 @@ body {
     color: var(--white-color);
     text-align: center;
     padding: 20px;
-}
+    margin-top: 40px;
+} 
+
 
 :root {
     --primary-color: #18aaa8;
@@ -202,7 +204,6 @@ body {
     --muted-color: #636e72;
     --border-color: #dfe6e9;
     --white-color: #ffffff;
-    --warning-color: #f39c12;
 
     --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 14px 20px rgba(0, 0, 0, 0.09);
@@ -236,6 +237,10 @@ body {
     text-decoration: none;
 }
 
+.logo:hover {
+    color: var(--primary-color);
+}
+
 .menu-btn {
     display: none;
     background-color: var(--primary-color);
@@ -257,6 +262,7 @@ body {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: 600;
+    transition: 0.3s;
 }
 
 .nav-link:hover {
@@ -275,7 +281,7 @@ body {
 .title-section {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
     color: var(--white-color);
-    padding: 70px 30px;
+    padding: 65px 30px;
     border-radius: 18px;
     margin-bottom: 30px;
     text-align: center;
@@ -283,70 +289,36 @@ body {
 }
 
 .title-card h1 {
-    font-size: 42px;
+    font-size: 38px;
     margin-bottom: 12px;
 }
 
 .title-card p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
-.intro-section {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
     margin-bottom: 30px;
-    box-shadow: var(--shadow-md);
 }
 
-.intro-section h2 {
+.about-card {
+    background-color: var(--card-color);
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.about-card h2 {
     color: var(--primary-dark);
     margin-bottom: 15px;
 }
 
-.intro-section p {
+.about-card p {
     margin-bottom: 14px;
-}
-
-.cards-section {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow-md);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.feature-card {
-    background-color: var(--white-color);
-    padding: 24px;
-    border-radius: 14px;
-    border: 1px solid var(--border-color);
-    transition: 0.3s;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-light);
-}
-
-.feature-link {
-    text-decoration: none;
-    color: var(--text-color);
-    display: block;
-    height: 100%;
-}
-
-.feature-link h3 {
-    color: var(--primary-dark);
-    margin-bottom: 10px;
-}
-
-.feature-link p {
-    color: var(--text-color);
 }
 
 .card-blue {
@@ -361,26 +333,55 @@ body {
     border-top: 5px solid var(--primary-light);
 }
 
-.card-warning {
-    border-top: 5px solid var(--warning-color);
+.technology-section {
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-md);
 }
 
-.highlight-section {
+.technology-section h2 {
+    color: var(--primary-dark);
+    margin-bottom: 18px;
+}
+
+.technology-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
 }
 
-.highlight-card {
+.technology-card {
+    background-color: var(--white-color);
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+}
+
+.technology-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.roadmap-section {
     background-color: var(--card-color);
     padding: 30px;
     border-radius: 16px;
     box-shadow: var(--shadow-md);
 }
 
-.highlight-card h2 {
+.roadmap-section h2 {
     color: var(--primary-dark);
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+}
+
+.roadmap-list {
+    padding-left: 24px;
+}
+
+.roadmap-list li {
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -388,15 +389,32 @@ body {
     color: var(--white-color);
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
 
-@media (max-width: 900px) {
-    .cards-section {
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+
+    .about-section {
         grid-template-columns: 1fr 1fr;
     }
 
-    .highlight-section {
-        grid-template-columns: 1fr;
+    .technology-list {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -424,22 +442,45 @@ body {
 
     .main-content {
         width: 92%;
+        margin: 25px auto;
     }
 
     .title-section {
-        padding: 50px 20px;
+        padding: 45px 20px;
     }
 
     .title-card h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
-    .cards-section {
+    .title-card p {
+        font-size: 16px;
+    }
+
+    .about-section {
         grid-template-columns: 1fr;
+    }
+
+    .technology-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
         padding: 22px;
     }
 
-    .intro-section {
+    .technology-section {
+        padding: 22px;
+    }
+
+    .roadmap-section {
         padding: 22px;
     }
 }
+
+
+
+
+
+
+
