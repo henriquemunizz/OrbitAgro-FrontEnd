@@ -131,6 +131,7 @@ footer {
     color: var(--muted-color);
     font-size: 1rem;
 }
+
 @media (max-width: 1100px) {
     nav {
         height: auto;
