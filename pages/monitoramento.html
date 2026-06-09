@@ -8,7 +8,9 @@
 <body>
 
     <nav>
-        <a href="../index.html">OrbitAgro</a>
+        <a href="../index.html">
+            <img src="../assets/logo-orbitagro.png" alt="Logo OrbitAgro">
+        </a>
 
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -74,6 +76,32 @@
                 <p>Temperatura elevada para algumas culturas agrícolas.</p>
             </article>
         </section>
+
+        <section>
+            <h2>Simular risco da lavoura</h2>
+
+            <p>
+                Preencha os campos abaixo para simular uma análise simples de risco agrícola.
+            </p>
+
+            <form>
+                <label>Umidade do solo (%)</label>
+                <input id="soil" type="number" placeholder="Exemplo: 31">
+
+                <label>Chuva acumulada (mm)</label>
+                <input id="rain" type="number" placeholder="Exemplo: 4">
+
+                <label>Temperatura (°C)</label>
+                <input id="temperature" type="number" placeholder="Exemplo: 34">
+
+                <button type="submit">Analisar risco</button>
+            </form>
+
+            <div>
+                <p>O resultado da análise aparecerá aqui.</p>
+                <h3>Nível de risco: aguardando dados</h3>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -82,3 +110,5 @@
 
 </body>
 </html>
+
+    
