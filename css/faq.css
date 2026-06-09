@@ -245,3 +245,21 @@ footer {
         width: 12rem;
     }
 }
+.faq-question::after {
+    content: "+";
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.faq-card.faq-open .faq-question::after {
+    content: "-";
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 1rem;
+}
+
+.faq-card.faq-open .faq-answer {
+    display: block;
+}
