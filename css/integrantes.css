@@ -174,30 +174,102 @@ footer {
     }
 }
 
-.faq-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.team-intro {
+    margin-bottom: 2rem;
 }
 
-.faq-card {
+.team-intro-card,
+.member-card {
     background-color: var(--card-color);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 14px;
     box-shadow: var(--shadow-md);
-    border-top: 6px solid var(--primary-color);
 }
 
-.faq-card h2 {
+.team-intro-card {
+    width: 100%;
+    text-align: center;
+    border-top: 6px solid var(--primary-light);
+}
+
+.team-intro-card h2 {
     color: var(--primary-dark);
-    margin-bottom: 1rem;
-}
-
-.faq-card p {
-    color: var(--muted-color);
     margin-bottom: 0.8rem;
 }
 
+.team-intro-card p {
+    color: var(--muted-color);
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.member-card {
+    width: 18rem;
+    min-height: 28rem;
+    text-align: center;
+    border-top: 6px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.member-img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    margin: 0 auto 1rem auto;
+}
+
+.member-card h2 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    color: var(--muted-color);
+    margin-bottom: 0.4rem;
+}
+
+.member-label {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.member-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.member-links a {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.member-links a:hover {
+    background-color: var(--primary-dark);
+}
+
+@media (max-width: 900px) {
+    .member-card {
+        width: 100%;
+        min-height: auto;
+    }
+}
 
 .menu-btn {
     display: none;
@@ -214,6 +286,7 @@ footer {
     background-color: var(--primary-dark);
 }
 
+
 @media (max-width: 700px) {
     nav {
         flex-direction: row;
@@ -223,6 +296,7 @@ footer {
         min-height: auto;
         padding: 1rem 5%;
     }
+
 
     .menu-btn {
         display: block;
@@ -244,39 +318,4 @@ footer {
     .logo img {
         width: 12rem;
     }
-}
-
-.faq-question {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    color: var(--primary-dark);
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-family: inherit;
-    text-align: left;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq-question::after {
-    content: "+";
-    color: var(--primary-color);
-    font-size: 1.6rem;
-}
-
-.faq-card.faq-open .faq-question::after {
-    content: "-";
-}
-
-.faq-answer {
-    display: none;
-    margin-top: 1rem;
-}
-
-
-.faq-card.faq-open .faq-answer {
-    display: block;
 }

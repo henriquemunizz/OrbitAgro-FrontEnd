@@ -174,28 +174,62 @@ footer {
     }
 }
 
-.faq-section {
+.about-section,
+.technology-list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.faq-card {
+.about-card,
+.technology-card,
+.technology-section,
+.roadmap-section {
     background-color: var(--card-color);
-    padding: 2rem;
     border-radius: 14px;
     box-shadow: var(--shadow-md);
-    border-top: 6px solid var(--primary-color);
 }
 
-.faq-card h2 {
+.about-card {
+    width: 100%;
+    padding: 2rem;
+}
+
+.about-card h2,
+.technology-section h2,
+.roadmap-section h2 {
     color: var(--primary-dark);
     margin-bottom: 1rem;
 }
 
-.faq-card p {
+.about-card p,
+.technology-card p,
+.roadmap-section li {
     color: var(--muted-color);
     margin-bottom: 0.8rem;
+}
+
+.technology-section,
+.roadmap-section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.technology-card {
+    width: 100%;
+    background-color: var(--green-soft);
+    padding: 1.5rem;
+}
+
+.technology-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-section ol {
+    margin-left: 1.5rem;
 }
 
 
@@ -244,39 +278,4 @@ footer {
     .logo img {
         width: 12rem;
     }
-}
-
-.faq-question {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    color: var(--primary-dark);
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-family: inherit;
-    text-align: left;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.faq-question::after {
-    content: "+";
-    color: var(--primary-color);
-    font-size: 1.6rem;
-}
-
-.faq-card.faq-open .faq-question::after {
-    content: "-";
-}
-
-.faq-answer {
-    display: none;
-    margin-top: 1rem;
-}
-
-
-.faq-card.faq-open .faq-answer {
-    display: block;
 }
