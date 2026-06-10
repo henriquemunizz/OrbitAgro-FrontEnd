@@ -3,92 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/alertas.css">
+
     <title>OrbitAgro | Alertas</title>
 </head>
 <body>
 
     <nav>
-        <a href="../index.html">
+        <a class="logo" href="../index.html">
             <img src="../assets/logo-orbitagro.png" alt="Logo OrbitAgro">
         </a>
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="monitoramento.html">Monitoramento</a></li>
-            <li><a href="alertas.html">Alertas</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html">Contato</a></li>
+        <button class="menu-btn" type="button" aria-label="Abrir menu">☰</button>
+
+        <ul class="nav-links">
+            <li><a class="nav-link " href="../index.html">Home</a></li>
+            <li><a class="nav-link " href="sobre.html">Sobre</a></li>
+            <li><a class="nav-link " href="integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link " href="faq.html">FAQ</a></li>
+            <li><a class="nav-link " href="contato.html">Contato</a></li>
+            <li><a class="nav-link " href="monitoramento.html">Monitoramento</a></li>
+            <li><a class="nav-link nav-active" href="alertas.html">Alertas</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Alertas e Recomendações</h1>
-        <p>Entenda como os alertas ajudam o produtor a tomar decisões no campo.</p>
-    </header>
 
     <main>
-        <section>
-            <h2>Objetivo dos alertas</h2>
 
-            <p>
-                Os alertas da OrbitAgro têm como objetivo transformar dados técnicos em
-                mensagens simples para o produtor rural.
-            </p>
-
-            <p>
-                A ideia é indicar quando uma propriedade precisa de atenção por causa de
-                seca, calor intenso, excesso de chuva ou queda no vigor da vegetação.
-            </p>
+        <section class="title-section">
+            <article class="title-card">
+                <h1>Alertas e Recomendações</h1>
+                <p>Entenda como a OrbitAgro transforma dados técnicos em orientação prática.</p>
+            </article>
         </section>
-
-        <section>
-            <h2>Alertas recentes</h2>
-
-            <article>
-                <h3>Risco alto de seca</h3>
-                <p>
-                    A umidade do solo está baixa e houve pouca chuva acumulada na última coleta.
-                </p>
-                <p>
-                    Recomendação: observar áreas mais sensíveis e avaliar a necessidade de irrigação.
-                </p>
-                <p>Severidade: alta</p>
+        <section class="alert-section">
+            <article class="alert-card high-alert">
+                <h2>Risco alto de seca</h2>
+                <p>A umidade do solo está baixa e houve pouca chuva acumulada na última coleta.</p>
+                <p>O produtor deve observar áreas mais sensíveis e avaliar a necessidade de irrigação.</p>
+                <p class="alert-level">Severidade: alta</p>
             </article>
 
-            <article>
-                <h3>Calor intenso</h3>
-                <p>
-                    A temperatura elevada pode causar estresse na plantação e reduzir o vigor da vegetação.
-                </p>
-                <p>
-                    Recomendação: acompanhar a próxima atualização e verificar sinais na lavoura.
-                </p>
-                <p>Severidade: média</p>
+            <article class="alert-card medium-alert">
+                <h2>Calor intenso</h2>
+                <p>A temperatura elevada pode causar estresse na plantação e reduzir o vigor da vegetação.</p>
+                <p>A recomendação é acompanhar a próxima atualização e verificar sinais na lavoura.</p>
+                <p class="alert-level">Severidade: média</p>
             </article>
 
-            <article>
-                <h3>Vegetação estável</h3>
-                <p>
-                    O índice NDVI indica que a vegetação segue em condição aceitável no momento.
-                </p>
-                <p>
-                    Recomendação: manter o acompanhamento do histórico da propriedade.
-                </p>
-                <p>Severidade: baixa</p>
+            <article class="alert-card low-alert">
+                <h2>Vegetação estável</h2>
+                <p>O índice NDVI indica que a vegetação segue em condição aceitável no momento.</p>
+                <p>Mesmo com baixo risco, o histórico deve continuar sendo acompanhado pelo produtor.</p>
+                <p class="alert-level">Severidade: baixa</p>
             </article>
         </section>
 
-        <section>
-            <h2>Recomendações práticas</h2>
+        <section class="recommendation-section">
+            <article class="recommendation-card">
+                <h2>Recomendações práticas</h2>
+                <p>A OrbitAgro não mostra apenas números. Ela transforma indicadores técnicos em orientações diretas.</p>
 
-            <ul>
-                <li>Avaliar irrigação nas áreas mais sensíveis.</li>
-                <li>Observar folhas amareladas ou solo muito seco.</li>
-                <li>Acompanhar a próxima atualização dos dados.</li>
-                <li>Registrar observações para comparar no histórico.</li>
-            </ul>
+                <ul>
+                    <li>Avaliar irrigação nas áreas mais sensíveis.</li>
+                    <li>Observar folhas amareladas ou solo muito seco.</li>
+                    <li>Acompanhar a próxima atualização dos dados.</li>
+                    <li>Registrar observações para comparar no histórico.</li>
+                </ul>
+            </article>
+
+            <article class="recommendation-card card-blue">
+                <h2>Histórico de alertas</h2>
+                <p>O histórico permite comparar alertas anteriores e entender padrões da propriedade ao longo do tempo.</p>
+                <p>Essa consulta ajuda no planejamento agrícola e pode apoiar conversas com técnicos, cooperativas ou gestores.</p>
+            </article>
+        </section>
+
+        <section class="timeline-section">
+            <article class="timeline-card card-green">
+                <h2>Hoje</h2>
+                <p>Seca</p>
+                <p class="alert-level">Alto</p>
+            </article>
+
+            <article class="timeline-card card-warning">
+                <h2>12/06</h2>
+                <p>Calor intenso</p>
+                <p class="alert-level">Médio</p>
+            </article>
+
+            <article class="timeline-card card-blue">
+                <h2>04/06</h2>
+                <p>Chuva baixa</p>
+                <p class="alert-level">Médio</p>
+            </article>
+
+            <article class="timeline-card card-light">
+                <h2>28/05</h2>
+                <p>Vegetação saudável</p>
+                <p class="alert-level">Baixo</p>
+            </article>
         </section>
     </main>
 
@@ -96,5 +115,7 @@
         <p>© 2026 OrbitAgro | Global Solution - FIAP</p>
     </footer>
 
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
