@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
     --primary-color: #18aaa8;
     --primary-dark: #0b8f91;
     --primary-light: #53d3cc;
@@ -12,6 +13,25 @@
 
     --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 14px 20px rgba(0, 0, 0, 0.09);
+=======
+    --primary-color: #2f8a24;
+    --primary-dark: #0b3d75;
+    --primary-light: #8cc63e;
+    --secondary-color: #2d3436;
+    --background-color: #f3f5f2;
+    --card-color: #ffffff;
+    --text-color: #333333;
+    --muted-color: #636e72;
+    --border-color: #dce6d5;
+    --white-color: #ffffff;
+    --danger-color: #b91c1c;
+    --warning-color: #d97706;
+    --blue-soft: #e8f1fb;
+    --green-soft: #e8f5e6;
+    --yellow-soft: #fff4d8;
+    --result-box: #e8f5e6;
+    --shadow-md: 0 10px 14px rgba(0, 0, 0, 0.08);
+>>>>>>> origin/main
 }
 
 * {
@@ -21,21 +41,36 @@
 }
 
 body {
+<<<<<<< HEAD
     font-family: "Poppins", Arial, sans-serif;
+=======
+    font-family: "Poppins", sans-serif;
+>>>>>>> origin/main
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
+<<<<<<< HEAD
 .navbar {
     background-color: var(--white-color);
     padding: 18px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+=======
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 0 7%;
+    min-height: 12vh;
+>>>>>>> origin/main
     box-shadow: var(--shadow-md);
 }
 
 .logo {
+<<<<<<< HEAD
     color: var(--primary-dark);
     font-size: 24px;
     font-weight: 700;
@@ -209,10 +244,28 @@ body {
     list-style: none;
     display: flex;
     gap: 18px;
+=======
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 16rem;
+    max-height: 6.5rem;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+>>>>>>> origin/main
 }
 
 .nav-link {
     text-decoration: none;
+<<<<<<< HEAD
     color: var(--secondary-color);
     font-weight: 600;
     transition: 0.3s;
@@ -312,14 +365,177 @@ body {
     }
 
     .main-content {
+=======
+    color: var(--primary-dark);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.nav-active {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.page-header {
+    display: none;
+}
+
+main {
+    width: 82%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+.card-blue {
+    border-top: 6px solid var(--primary-dark);
+}
+
+.card-green {
+    border-top: 6px solid var(--primary-color);
+}
+
+.card-light {
+    border-top: 6px solid var(--primary-light);
+}
+
+.card-warning {
+    border-top: 6px solid var(--warning-color);
+}
+
+.title-section {
+    margin-bottom: 2rem;
+}
+
+.title-card {
+    background-color: var(--card-color);
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: var(--shadow-md);
+    border-top: 6px solid var(--primary-color);
+    text-align: center;
+}
+
+.title-card h1 {
+    color: var(--primary-dark);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.title-card p {
+    color: var(--muted-color);
+    font-size: 1rem;
+}
+
+@media (max-width: 1100px) {
+    nav {
+        height: auto;
+        padding: 1rem 5%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo img {
+        width: 15rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    main {
+>>>>>>> origin/main
         width: 90%;
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
     .navbar {
         flex-wrap: wrap;
         gap: 15px;
+=======
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 13rem;
+    }
+
+    .title-card h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 92%;
+    }
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-card {
+    background-color: var(--card-color);
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: var(--shadow-md);
+    border-top: 6px solid var(--primary-color);
+}
+
+.faq-card h2 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.faq-card p {
+    color: var(--muted-color);
+    margin-bottom: 0.8rem;
+}
+
+
+.menu-btn {
+    display: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: auto;
+        padding: 1rem 5%;
+>>>>>>> origin/main
     }
 
     .menu-btn {
@@ -327,17 +543,27 @@ body {
     }
 
     .nav-links {
+<<<<<<< HEAD
         width: 100%;
         display: none;
         flex-direction: column;
         text-align: center;
         gap: 12px;
+=======
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        padding-top: 1rem;
+>>>>>>> origin/main
     }
 
     .nav-links.nav-open {
         display: flex;
     }
 
+<<<<<<< HEAD
     .main-content {
         width: 92%;
         margin: 25px auto;
@@ -367,4 +593,44 @@ body {
         padding: 13px;
         font-size: 15px;
     }
+=======
+    .logo img {
+        width: 12rem;
+    }
+}
+
+.faq-question {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question::after {
+    content: "+";
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.faq-card.faq-open .faq-question::after {
+    content: "-";
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 1rem;
+}
+
+
+.faq-card.faq-open .faq-answer {
+    display: block;
+>>>>>>> origin/main
 }
