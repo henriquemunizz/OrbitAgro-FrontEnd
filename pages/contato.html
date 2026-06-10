@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/contato.css">
+
+    <title>OrbitAgro | Contato</title>
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="../index.html">
+            <img src="../assets/logo-orbitagro.png" alt="Logo OrbitAgro">
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Abrir menu">☰</button>
+
+        <ul class="nav-links">
+            <li><a class="nav-link " href="../index.html">Home</a></li>
+            <li><a class="nav-link " href="sobre.html">Sobre</a></li>
+            <li><a class="nav-link " href="integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link " href="faq.html">FAQ</a></li>
+            <li><a class="nav-link nav-active" href="contato.html">Contato</a></li>
+            <li><a class="nav-link " href="monitoramento.html">Monitoramento</a></li>
+            <li><a class="nav-link " href="alertas.html">Alertas</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <section class="title-section">
+            <article class="title-card">
+                <h1>Contato</h1>
+                <p>Entre em contato com a equipe responsável pelo projeto OrbitAgro.</p>
+            </article>
+        </section>
+        <section class="contact-container">
+            <article class="contact-info">
+                <h2>Fale com a equipe</h2>
+                <p>Use o formulário para enviar dúvidas, sugestões ou comentários sobre a solução.</p>
+                <p>A mensagem pode tratar do funcionamento da plataforma, dos alertas climáticos, do uso de dados de satélite ou da proposta para agricultura familiar.</p>
+                <p><span class="contact-label">Projeto:</span> OrbitAgro</p>
+                <p><span class="contact-label">Turma:</span> 1TDSPv-2026</p>
+                <p><span class="contact-label">Instituição:</span> FIAP</p>
+            </article>
+
+            <article class="contact-form-card">
+                <form onsubmit="validateContact(event)">
+                    <div class="form-group">
+                        <label class="form-label">Nome</label>
+                        <input class="form-input" id="contact-name" type="text" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">E-mail</label>
+                        <input class="form-input" id="contact-email" type="email" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Mensagem</label>
+                        <input class="form-input" id="contact-message" type="text" placeholder="Digite sua mensagem">
+                    </div>
+
+                    <button class="action-btn" type="submit">Enviar mensagem</button>
+                </form>
+
+                <div class="result-box" id="contact-result">
+                    <p id="contact-text">O resultado aparecerá aqui.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 OrbitAgro | Global Solution - FIAP</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

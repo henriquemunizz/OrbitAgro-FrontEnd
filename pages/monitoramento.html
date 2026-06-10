@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/monitoramento.css">
+
+    <title>OrbitAgro | Monitoramento</title>
+</head>
+<body>
+
+    <nav>
+        <a class="logo" href="../index.html">
+            <img src="../assets/logo-orbitagro.png" alt="Logo OrbitAgro">
+        </a>
+
+        <button class="menu-btn" type="button" aria-label="Abrir menu">☰</button>
+
+        <ul class="nav-links">
+            <li><a class="nav-link " href="../index.html">Home</a></li>
+            <li><a class="nav-link " href="sobre.html">Sobre</a></li>
+            <li><a class="nav-link " href="integrantes.html">Integrantes</a></li>
+            <li><a class="nav-link " href="faq.html">FAQ</a></li>
+            <li><a class="nav-link " href="contato.html">Contato</a></li>
+            <li><a class="nav-link nav-active" href="monitoramento.html">Monitoramento</a></li>
+            <li><a class="nav-link " href="alertas.html">Alertas</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <section class="title-section">
+            <article class="title-card">
+                <h1>Monitoramento Agrícola</h1>
+                <p>Simule o acompanhamento de uma propriedade rural com indicadores agroclimáticos.</p>
+            </article>
+        </section>
+        <section class="solution-section">
+            <article class="solution-card card-blue">
+                <h2>Como funciona</h2>
+                <p>A plataforma recebe ou simula dados agroclimáticos ligados à propriedade cadastrada.</p>
+                <p>Com esses dados, o sistema acompanha NDVI, temperatura, chuva e umidade do solo.</p>
+            </article>
+
+            <article class="solution-card card-green">
+                <h2>Dados utilizados</h2>
+                <p>A OrbitAgro utiliza dados de satélites já existentes e fontes públicas, como INPE, NASA e ESA.</p>
+                <p>No MVP, dados simulados representam o fluxo de análise, painel e geração de alertas.</p>
+            </article>
+        </section>
+
+        <section class="dashboard-section">
+            <article class="dashboard-card">
+                <h2>Status da propriedade</h2>
+                <p>Propriedade: Sítio Boa Colheita</p>
+                <p>Cultura principal: Milho</p>
+                <p>Última atualização: hoje</p>
+                <h3>Risco médio de seca</h3>
+            </article>
+
+            <article class="indicator-card card-green">
+                <h2>NDVI</h2>
+                <p>Índice de vegetação utilizado para acompanhar a saúde e o vigor da lavoura.</p>
+                <h3>0,63</h3>
+                <p>Atenção</p>
+            </article>
+
+            <article class="indicator-card card-blue">
+                <h2>Chuva</h2>
+                <p>Volume acumulado usado para identificar falta ou excesso de precipitação.</p>
+                <h3>4 mm</h3>
+                <p>Baixa</p>
+            </article>
+
+            <article class="indicator-card card-warning">
+                <h2>Umidade</h2>
+                <p>Indicador usado para avaliar risco de seca e necessidade de atenção à irrigação.</p>
+                <h3>31%</h3>
+                <p>Média</p>
+            </article>
+        </section>
+
+        <section class="tool-container">
+            <div class="tool-container-title">
+                <h2>Simular risco da lavoura</h2>
+                <p>Informe dados simples para verificar o nível de atenção da propriedade.</p>
+            </div>
+
+            <form class="risk-form" onsubmit="calculateRisk(event)">
+                <div class="form-group">
+                    <label class="form-label">Umidade do solo (%)</label>
+                    <input class="form-input" id="soil" type="number" placeholder="Exemplo: 31">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Chuva acumulada (mm)</label>
+                    <input class="form-input" id="rain" type="number" placeholder="Exemplo: 4">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Temperatura (°C)</label>
+                    <input class="form-input" id="temperature" type="number" placeholder="Exemplo: 34">
+                </div>
+
+                <button class="action-btn" type="submit">Analisar risco</button>
+            </form>
+
+            <div class="result-box" id="risk-result">
+                <p id="risk-message">O resultado da análise aparecerá aqui.</p>
+                <h3 id="risk-level">Nível de risco: aguardando dados</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 OrbitAgro | Global Solution - FIAP</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

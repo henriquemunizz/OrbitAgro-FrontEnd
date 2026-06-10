@@ -1,20 +1,4 @@
 :root {
-<<<<<<< HEAD
-    --primary-color: #18aaa8;
-    --primary-dark: #0b8f91;
-    --primary-light: #53d3cc;
-    --secondary-color: #2d3436;
-    --background-color: #eefafa;
-    --card-color: #ffffff;
-    --text-color: #333333;
-    --muted-color: #636e72;
-    --border-color: #dfe6e9;
-    --white-color: #ffffff;
-    --warning-color: #f39c12;
-
-    --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
-    --shadow-lg: 0 14px 20px rgba(0, 0, 0, 0.09);
-=======
     --primary-color: #2f8a24;
     --primary-dark: #0b3d75;
     --primary-light: #8cc63e;
@@ -32,7 +16,6 @@
     --yellow-soft: #fff4d8;
     --result-box: #e8f5e6;
     --shadow-md: 0 10px 14px rgba(0, 0, 0, 0.08);
->>>>>>> origin/main
 }
 
 * {
@@ -42,23 +25,11 @@
 }
 
 body {
-<<<<<<< HEAD
-    font-family: "Poppins", Arial, sans-serif;
-=======
     font-family: "Poppins", sans-serif;
->>>>>>> origin/main
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-<<<<<<< HEAD
-.navbar {
-    background-color: var(--white-color);
-    padding: 18px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-=======
 nav {
     display: flex;
     justify-content: space-between;
@@ -66,34 +37,10 @@ nav {
     background-color: var(--white-color);
     padding: 0 7%;
     min-height: 12vh;
->>>>>>> origin/main
     box-shadow: var(--shadow-md);
 }
 
 .logo {
-<<<<<<< HEAD
-    color: var(--primary-dark);
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.menu-btn {
-    display: none;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 18px;
-=======
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -109,378 +56,10 @@ nav {
     display: flex;
     list-style: none;
     gap: 1.2rem;
->>>>>>> origin/main
 }
 
 .nav-link {
     text-decoration: none;
-<<<<<<< HEAD
-    color: var(--secondary-color);
-    font-weight: 600;
-}
-
-.nav-link:hover {
-    color: var(--primary-dark);
-}
-
-.nav-active {
-    color: var(--primary-dark);
-}
-
-.main-content {
-    width: 84%;
-    margin: 40px auto;
-}
-
-.title-section {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
-    color: var(--white-color);
-    padding: 70px 30px;
-    border-radius: 18px;
-    margin-bottom: 30px;
-    text-align: center;
-    box-shadow: var(--shadow-md);
-}
-
-.title-card h1 {
-    font-size: 42px;
-    margin-bottom: 12px;
-}
-
-.title-card p {
-    font-size: 18px;
-}
-
-.intro-section {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow-md);
-}
-
-.intro-section h2 {
-    color: var(--primary-dark);
-    margin-bottom: 15px;
-}
-
-.intro-section p {
-    margin-bottom: 14px;
-}
-
-.cards-section {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow-md);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.feature-card {
-    background-color: var(--white-color);
-    padding: 24px;
-    border-radius: 14px;
-    border: 1px solid var(--border-color);
-}
-
-.feature-link {
-    text-decoration: none;
-    color: var(--text-color);
-    display: block;
-}
-
-.feature-link h3 {
-    color: var(--primary-dark);
-    margin-bottom: 10px;
-}
-
-.feature-link p {
-    color: var(--text-color);
-}
-
-.card-blue {
-    border-top: 5px solid var(--primary-color);
-}
-
-.card-green {
-    border-top: 5px solid var(--primary-dark);
-}
-
-.card-light {
-    border-top: 5px solid var(--primary-light);
-}
-
-.card-warning {
-    border-top: 5px solid var(--warning-color);
-}
-
-.highlight-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.highlight-card {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: var(--shadow-md);
-}
-
-.highlight-card h2 {
-    color: var(--primary-dark);
-    margin-bottom: 14px;
-}
-
-.footer {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-:root {
-    --primary-color: #18aaa8;
-    --primary-dark: #0b8f91;
-    --primary-light: #53d3cc;
-    --secondary-color: #2d3436;
-    --background-color: #eefafa;
-    --card-color: #ffffff;
-    --text-color: #333333;
-    --muted-color: #636e72;
-    --border-color: #dfe6e9;
-    --white-color: #ffffff;
-    --warning-color: #f39c12;
-
-    --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
-    --shadow-lg: 0 14px 20px rgba(0, 0, 0, 0.09);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Poppins", Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-.navbar {
-    background-color: var(--white-color);
-    padding: 18px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: var(--shadow-md);
-}
-
-.logo {
-    color: var(--primary-dark);
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.logo:hover {
-    color: var(--primary-color);
-}
-
-.menu-btn {
-    display: none;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 18px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.nav-link:hover {
-    color: var(--primary-dark);
-}
-
-.nav-active {
-    color: var(--primary-dark);
-}
-
-.main-content {
-    width: 84%;
-    margin: 40px auto;
-}
-
-.title-section {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
-    color: var(--white-color);
-    padding: 70px 30px;
-    border-radius: 18px;
-    margin-bottom: 30px;
-    text-align: center;
-    box-shadow: var(--shadow-md);
-}
-
-.title-card h1 {
-    font-size: 42px;
-    margin-bottom: 12px;
-}
-
-.title-card p {
-    font-size: 18px;
-}
-
-.intro-section {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow-md);
-}
-
-.intro-section h2 {
-    color: var(--primary-dark);
-    margin-bottom: 15px;
-}
-
-.intro-section p {
-    margin-bottom: 14px;
-}
-
-.cards-section {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    box-shadow: var(--shadow-md);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.feature-card {
-    background-color: var(--white-color);
-    padding: 24px;
-    border-radius: 14px;
-    border: 1px solid var(--border-color);
-    transition: 0.3s;
-    min-height: 180px;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-light);
-}
-
-.feature-link {
-    text-decoration: none;
-    color: var(--text-color);
-    display: block;
-    height: 100%;
-}
-
-.feature-link h3 {
-    color: var(--primary-dark);
-    margin-bottom: 10px;
-}
-
-.feature-link p {
-    color: var(--text-color);
-}
-
-.card-blue {
-    border-top: 5px solid var(--primary-color);
-}
-
-.card-green {
-    border-top: 5px solid var(--primary-dark);
-}
-
-.card-light {
-    border-top: 5px solid var(--primary-light);
-}
-
-.card-warning {
-    border-top: 5px solid var(--warning-color);
-}
-
-.highlight-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.highlight-card {
-    background-color: var(--card-color);
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: var(--shadow-md);
-    border: 1px solid var(--border-color);
-}
-
-.highlight-card h2 {
-    color: var(--primary-dark);
-    margin-bottom: 14px;
-}
-
-.footer {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 18px 5%;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .nav-links {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .main-content {
-        width: 90%;
-    }
-
-    .cards-section {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .highlight-section {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        gap: 15px;
-=======
     color: var(--primary-dark);
     font-size: 0.95rem;
     font-weight: 500;
@@ -701,7 +280,6 @@ footer {
         align-items: center;
         min-height: auto;
         padding: 1rem 5%;
->>>>>>> origin/main
     }
 
     .menu-btn {
@@ -709,70 +287,23 @@ footer {
     }
 
     .nav-links {
-<<<<<<< HEAD
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
-=======
         display: none;
         width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 0.8rem;
         padding-top: 1rem;
->>>>>>> origin/main
     }
 
     .nav-links.nav-open {
         display: flex;
     }
 
-<<<<<<< HEAD
-    .main-content {
-        width: 92%;
-        margin: 25px auto;
-    }
-
-    .title-section {
-        padding: 45px 20px;
-    }
-
-    .title-card h1 {
-        font-size: 32px;
-    }
-
-    .title-card p {
-        font-size: 16px;
-    }
-
-    .intro-section {
-        padding: 22px;
-    }
-
-    .cards-section {
-        grid-template-columns: 1fr;
-        padding: 22px;
-    }
-
-    .feature-card {
-        min-height: auto;
-    }
-
-    .highlight-card {
-        padding: 22px;
-=======
     .logo img {
         width: 12rem;
->>>>>>> origin/main
     }
 }
 
-
-<<<<<<< HEAD
-
-=======
 @media (max-width: 600px) {
     .nav-links {
         flex-direction: column;
@@ -791,4 +322,3 @@ footer {
         width: 92%;
     }
 }
->>>>>>> origin/main
